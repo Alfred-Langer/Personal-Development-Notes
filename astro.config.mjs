@@ -37,6 +37,14 @@ export default defineConfig({
               label: "Intro to Docker",
               slug: "docker/intro-to-docker",
             },
+            {
+              label: "Why use Docker and Containers as a developer?",
+              slug: "docker/why-use-docker-and-containers",
+            },
+            {
+              label: "VMs vs Containers",
+              slug: "docker/vms-vs-containers",
+            },
           ],
         },
       ],

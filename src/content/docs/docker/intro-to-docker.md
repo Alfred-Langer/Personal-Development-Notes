@@ -3,71 +3,37 @@ title: "Intro to Docker"
 description: "General introduction of Docker"
 ---
 
-## What is HTML?
+## What is Docker?
 
-**HTML** = HyperText Markup Language
+Docker is a platform that uses container technology. It allows users to easily build and manage containers on their system.
 
-- HTML is **NOT** a programming language. It is a _markup language_.
-- A markup language describes what content will be displayed on a web page and how it will be structured.
-- There is no logic that can be written using strictly HTML.
-- HTML is understood by Web Browsers which allows the browser to render the language into a web page that is viewable by the User.
+Note: Containers as a technology exist outside of Docker. So you could use Containers without Docker, however Docker is the industry standard for creating and managing Containers.
 
----
+## What is a Container?
 
-## Basic Anatomy of an HTML Element
+"Officially"
+Container: A container is a standardized unit of software that packages an application’s code along with its dependencies (such as runtimes, libraries, and system tools) so it can run reliably on any system.
 
-Example:
+"Unofficially"
+Conceptually, you can think of a container as a virtual mini computer that only contains the absolute necessities to run an application. This includes, your application's code, any runtimes that are required to execute your application, as well as any modules, packages, or any other system dependecies required for the application to run. 
 
-```html
-<p>HTML is a Markup Language</p>
-```
+Note: Don't confuse Containers with VMs. They have distinct differences that we will cover over later. The virtual mini computer analogy is just to understand the concept of Containers from a high-level. 
 
-1. **Opening tag**: Name of the element encased with `<` and `>`.
-2. **Content**: Any text or elements placed between the opening and closing tags.
-   - Elements can also be **nested** inside each other.  
-     Example:
-     ```html
-     <p>This is <strong>important</strong> text.</p>
-     ```
-3. **Closing tag**: Name of the element encased with `</` and `>`.
-   - Some elements do not have content and therefore don’t need a closing tag. These are called **void elements** (e.g., `br`, `hr`, `img`, `meta`, `link`).  
-     Example:
-     ```html
-     <br />
-     ```
+## "If it runs on my machine, then it can run on any machine"
 
----
+The primary benefit of using Docker is the ability to deploy your application onto various systems, regardless of the OS. This means that if you can package your application into a Docker container and run it on your system, then you'll be able to send that container to another system and run it there as well. 
 
-## Basic Structure of an HTML Document
 
-```html
-<!DOCTYPE html> <!-- 1 -->
+### Analogy of the Concept (Cooking Example 🍲):
 
-<html lang="en"> <!-- 2 -->
+Imagine you want to share your grandmother’s soup recipe with a friend.
 
-  <head> <!-- 3 -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My first webpage</title>
-  </head> <!-- 3 -->
+#### Without Docker (just a recipe card):
+You write the recipe on a piece of paper and hand it to your friend. But when they try to cook it, they realize they don’t have the same spices, their stove heats differently, and their measuring cups aren’t the same as yours. The soup tastes different than yours.
 
-  <body> <!-- 4 -->
-    <h1>Hello, world!</h1>
-    <p>My name is Alfy, and this is my very first webpage :D</p>
-  </body> <!-- 4 -->
+#### With Docker (containerized recipe box):
+Instead of just giving the recipe, you hand over a pre-packed box that includes all the ingredients, the exact spices, the pot, the utensils, even a little portable stove that heats the same way. Now, no matter where your friend lives, when they open the box and cook, the soup will turn out exactly the same as it does in your kitchen.
 
-</html> <!-- 2 -->
-```
 
-1. **`<!DOCTYPE html>`** — A declaration placed at the top of an HTML document that tells the browser to render the page in **HTML5 standards mode**. Without it, browsers fall back to _quirks mode_ (emulating old 1990s/2000s browser behavior).
-2. **`<html>`** — Root element of the page. All other HTML elements must go inside these tags.
-3. **`<head>`** — Contains information about the page that isn’t directly shown to the user, such as the title, metadata, and links to CSS/JS files.
-4. **`<body>`** — Contains all visible content that will be displayed to the user, such as headings, paragraphs, images, and links.
+That’s the essence of “If it runs on my machine, it runs anywhere” — you’re packaging not just the instructions, but everything needed so there are no surprises on someone else’s system.
 
----
-
-### Is the DOCTYPE declaration really necessary?
-
-Technically, you can omit the DOCTYPE declaration and the browser will still render your HTML. However, without it the browser will enter **quirks mode**, which can cause HTML, CSS, and even JavaScript to behave inconsistently across browsers.
-
-By including `<!DOCTYPE html>` at the top of your document, you ensure that the browser treats the page as a **modern HTML5 document**, enabling consistent behavior and access to the latest features.
