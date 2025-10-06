@@ -27,6 +27,18 @@ export default defineConfig({
               label: "Intro to HTML",
               slug: "html-css/intro-to-html",
             },
+            {
+              label: "Text Elements",
+              slug: "html-css/text-elements",
+            },
+            {
+              label: "Images and Attributes",
+              slug: "html-css/images-and-attributes",
+            },
+            {
+              label: "Hyperlinks in HTML",
+              slug: "html-css/links_in_html",
+            },
           ],
         },
         {
