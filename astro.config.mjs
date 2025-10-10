@@ -39,6 +39,14 @@ export default defineConfig({
               label: "Hyperlinks in HTML",
               slug: "html-css/links_in_html",
             },
+            {
+              label: "HTML5 Semantic Elements Part One",
+              slug: "html-css/html5-semantic-elements-part-one",
+            },
+            {
+              label: "HTML5 Semantic Elements Part Two",
+              slug: "html-css/html5-semantic-elements-part-two",
+            },
           ],
         },
         {

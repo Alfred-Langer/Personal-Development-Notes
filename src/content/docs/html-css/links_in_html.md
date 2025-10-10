@@ -55,7 +55,7 @@ This will display as a clickable link: **Visit Example**
    ```
 
 4. **`download`**  
-   - Suggests that the target should be downloaded rather than opened.  
+   - Instructs the browser that the target, commonly a file, should be downloaded and not opened in a tab. 
    Example:
    ```html
    <a href="brochure.pdf" download>Download Brochure</a>

@@ -13,6 +13,7 @@ Example:
 ```
 
 > Note: Unlike most elements we’ve worked with so far that have both an opening and closing tag, the `<img>` tag is a **void element**. Void elements do not wrap content, so they don’t have a closing tag.  
+
 > In HTML5, you can simply write `<img ...>`. Writing `<img ... />` with a trailing slash is also valid, but optional.  
 
 Correct:
@@ -71,7 +72,7 @@ As you become more familiar with HTML, you’ll see many more attributes that ca
 
 ---
 
-## Other Notable Attributes
+## Other Common Notable Attributes
 
 ### The `lang` Attribute for the `<html>` Tag
 
