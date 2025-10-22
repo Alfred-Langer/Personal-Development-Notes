@@ -1,0 +1,31 @@
+/* Custom styling for Starlight sidebar */
+
+/* Target nested subheaders (subheaders within another subheader) */
+details details > summary .large{
+  font-size: 0.875rem !important;
+}
+
+/* Style for nested/subfolder items (2nd level) */
+.sidebar-content ul ul > li > a {
+  font-style: italic;
+  /* Or use a different font-family: */
+  /* font-family: 'Georgia', serif; */
+}
+
+/* Style for deeply nested items (3rd level and beyond) */
+.sidebar-content ul ul ul > li > a {
+  font-weight: 300;
+  font-size: 0.8rem;
+  /* Or use a different font-family: */
+  /* font-family: 'Courier New', monospace; */
+}
+
+/* Alternative: Target by details element for collapsible groups */
+details ul > li > a {
+  font-style: italic;
+}
+
+details details ul > li > a{
+  font-weight: 300;
+  opacity: 0.9;
+}

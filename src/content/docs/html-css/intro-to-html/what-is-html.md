@@ -1,9 +1,7 @@
 ---
-title: "Intro to HTML"
+title: "What is HTML?"
 description: "General introduction of the HTML language and syntax."
 ---
-
-## What is HTML?
 
 **HTML** = HyperText Markup Language
 

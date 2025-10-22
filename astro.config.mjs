@@ -13,34 +13,52 @@ const sidebar = [
       },
       {
         label: "Intro to HTML",
-        slug: "html-css/intro-to-html",
-      },
-      {
-        label: "Text Elements",
-        slug: "html-css/text-elements",
-      },
-      {
-        label: "Images and Attributes",
-        slug: "html-css/images-and-attributes",
-      },
-      {
-        label: "Hyperlinks in HTML",
-        slug: "html-css/links-in-html",
-      },
-      {
-        label: "HTML5 Semantic Elements",
         items: [
           {
-            label: "Part One",
-            slug: "html-css/html5-semantic-elements-part-one",
+            label: "What is HTML?",
+            slug: "html-css/intro-to-html/what-is-html",
           },
           {
-            label: "Part Two",
-            slug: "html-css/html5-semantic-elements-part-two",
+            label: "Text Elements",
+            slug: "html-css/intro-to-html/text-elements",
           },
           {
-            label: "Website Example",
-            slug: "html-css/html5-semantic-website-example",
+            label: "Images and Attributes",
+            slug: "html-css/intro-to-html/images-and-attributes",
+          },
+          {
+            label: "Hyperlinks in HTML",
+            slug: "html-css/intro-to-html/links-in-html",
+          },
+          {
+            label: "HTML5 Semantic Elements",
+            items: [
+              {
+                label: "Part One",
+                slug: "html-css/intro-to-html/html5-semantic-elements-part-one",
+              },
+              {
+                label: "Part Two",
+                slug: "html-css/intro-to-html/html5-semantic-elements-part-two",
+              },
+              {
+                label: "Website Example",
+                slug: "html-css/intro-to-html/html5-semantic-website-example",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        label: "Intro to CSS",
+        items: [
+          {
+            label: "What is CSS?",
+            slug: "html-css/intro-to-css/what-is-css",
+          },
+          {
+            label: "Combinators, Classes, Ids",
+            slug: "html-css/intro-to-css/css-combinators-classes-ids",
           },
         ],
       },
@@ -78,6 +96,7 @@ export default defineConfig({
         },
       ],
       sidebar,
+      customCss: ["/src/styles/custom.css"],
     }),
   ],
 });

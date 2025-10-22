@@ -1,0 +1,100 @@
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+  color: #444;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+li {
+  font-size: 20px;
+}
+
+/*These are descendant combinators. Essentially it selects elements that are descendants 
+of another specified element:
+
+/*Here it is selecting p elements that are descendants of footer
+/* footer p {
+  font-size: 16px;
+} */
+
+/*Here it is selecting p elements that are descendants of header elements that are descendants
+of article elements*/
+/* article header p {
+  font-style: italic;
+} */
+
+/*Note: Descendants does not only mean one-level or direct-children. As long as the element is a descendant
+of the specified element, no matter how deep it goes, it will be selected*/
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+}
+
+aside {
+  background-color: #f7f7f7;
+  /* border-width: 5px;
+  border-style: solid;
+  border-color: #1098ad; */
+
+  /*Shorthand form of setting the width, style, and color of a border*/
+  /* border: 5px solid #1098ad; */
+
+  /*Specifically only sets the top and bottom borders of an element and leaves out the sides*/
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+
+/*This is how you commonly set the background color of your entire web page.*/
+body {
+  /* background-color: orangered; */
+}

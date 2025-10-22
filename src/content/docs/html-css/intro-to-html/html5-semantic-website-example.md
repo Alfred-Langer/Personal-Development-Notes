@@ -3,7 +3,7 @@ title: "Semantic Elements Example: Recipe Website"
 description: "Real-world website example using Article, Section, and Aside elements"
 ---
 
-# Recipe Website Semantic HTML Examples
+## Recipe Website Semantic HTML Examples
 
 This document shows three different pages from a recipe website and explains when and why to use `<article>`, `<section>`, and `<aside>` elements.
 
