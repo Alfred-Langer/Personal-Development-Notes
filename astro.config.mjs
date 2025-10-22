@@ -60,6 +60,10 @@ const sidebar = [
             label: "Combinators, Classes, Ids",
             slug: "html-css/intro-to-css/css-combinators-classes-ids",
           },
+          {
+            label: "Colors in CSS",
+            slug: "html-css/intro-to-css/colors-in-css",
+          },
         ],
       },
     ],
