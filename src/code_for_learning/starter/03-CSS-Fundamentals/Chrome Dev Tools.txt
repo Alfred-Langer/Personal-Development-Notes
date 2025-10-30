@@ -1,0 +1,54 @@
+Chrome Dev Tools Things you probably didn't know: 
+
+The CSS styles/rules that are
+listed in the Styles tab of ChromeDevTools shows you the order/hierachy of the
+rules. The rules at the top will take precedent and override any other rules
+below it. You'll often see that rules that are overridden will be crossed out.
+
+User Agent Stylesheet refers to the defaults CSS styling of elements. AKA if you
+haven't styled an element in your own CSS sheets, the UserAgentStylesheet will
+style them with default values. This is why <h1> elements are always bold even
+without CSS stylings. This is also why <p> and <div>elements have a display attribute
+of block by default.
+
+You can add and modify the CSS rules listed in the Styles Tab for a particular element.
+You can also modify the state of certain elements for pseudo classes. So for example, you
+can see what the stylings of an <a> element would be if the element is being hovered
+or clicked. 
+
+This is done by clicking on an element. In the Styles tab you should see a button
+labelled :hov. When you click on that you should then see various states that you
+can force the element to be in see how it's styled during that state.
+
+
+
+
+CSS THEORY #1: Conflicts between selectors
+
+There is a priority in rules
+
+Inline styling
+Internal styling
+External styling
+
+
+The more specific the selector is the more precedent it has
+
+Ids are more specific than classes
+Classes are more specific than element selectors
+If using a group selector, the less elements the more specific
+
+If two selectors have the same precedent, then it's the last written rule that gets
+applied
+
+!important will always take the most priority regardless of where it's placed
+
+
+
+5 !important
+4 Inline styling
+3 Id selectors
+2 Class/Pseudo selectors
+1 Element selectors
+
+Last Style loaded will be used if two styles have the same priority.

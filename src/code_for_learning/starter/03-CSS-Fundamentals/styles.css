@@ -116,13 +116,42 @@ article p:first-child {
   color: red;
 }
 
-:link {
+/* :link {
   font-size: 100px;
-}
+} */
 
 /*Not good practice. You should be using the :link pseudo selector along with the a selector
 /*This ensures that every <a> element will have a proper href attribute, since :link only targets
 elements that have the href attribute.*/
 a {
   color: red;
+}
+
+/*These two pseudo selectors are often used together to style links*/
+
+/*Anchor tags that have the href attribute*/
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+/*Anchor tags that have the user has already clicked on*/
+a:visited {
+  color: #1098ad;
+}
+
+/*Anchor tags that the user is currently hovering*/
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline yellowgreen;
+}
+
+/*Anchor tags that the user is actively clicking
+*Kinda hard to see because the user usually only clicks on 
+the link for a split second. However if you the user is holding
+down the link you'll be able to see the styling.*/
+a:active {
+  background-color: purple;
+  font-style: italic;
 }
