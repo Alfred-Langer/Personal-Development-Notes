@@ -64,27 +64,39 @@ const sidebar = [
             label: "Colors in CSS",
             slug: "html-css/intro-to-css/colors-in-css",
           },
+          {
+            label: "Pseudo Classes",
+            slug: "html-css/intro-to-css/css-pseudo-classes",
+          },
+          {
+            label: "Priority in CSS",
+            slug: "html-css/intro-to-css/css-specificity-and-priority",
+          },
+          {
+            label: "Inheritance in CSS",
+            slug: "html-css/intro-to-css/css-inheritance",
+          },
         ],
       },
     ],
   },
-  {
-    label: "Docker Notes",
-    items: [
-      {
-        label: "Intro to Docker",
-        slug: "docker/intro-to-docker",
-      },
-      {
-        label: "Why use Docker and Containers as a developer?",
-        slug: "docker/why-use-docker-and-containers",
-      },
-      {
-        label: "VMs vs Containers",
-        slug: "docker/vms-vs-containers",
-      },
-    ],
-  },
+  // {
+  //   label: "Docker Notes",
+  //   items: [
+  //     {
+  //       label: "Intro to Docker",
+  //       slug: "docker/intro-to-docker",
+  //     },
+  //     {
+  //       label: "Why use Docker and Containers as a developer?",
+  //       slug: "docker/why-use-docker-and-containers",
+  //     },
+  //     {
+  //       label: "VMs vs Containers",
+  //       slug: "docker/vms-vs-containers",
+  //     },
+  //   ],
+  // },
 ];
 
 // https://astro.build/config
