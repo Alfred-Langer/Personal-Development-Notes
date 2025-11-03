@@ -1,0 +1,9 @@
+# Aliases
+
+After executing your SQL query you will be given a query result with all the records and fields that your query requested. The name of the fields in your query results will be the same as the name of the fields within the table. Sometimes, you may want to alter the name of those fields in your query result. This is where Aliases come in to play. By using the keyword AS, you can modify the fields names to whatever you want.
+
+For example: Let's say you have a table called credit_cards, and you want to select all the credit card numbers from the table. Within the table the field that has the data you want is called numbers. Now in the context of the table credit_cards, you can assume that numbers refers to number of the credit card instance, however your query result may not have that context. Therefore we would want to use an alias to ensure that you'll know that the data you queried refers to credit card numbers.
+
+SELECT numbers AS credit_card_numbers FROM credit_cards;
+
+#

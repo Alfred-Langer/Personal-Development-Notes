@@ -1,0 +1,37 @@
+# Records and Fields
+
+In databases, rows are often referred to as **records** and columns as **fields**.
+
+- **Records**: Each record contains the data for an individual observation (one row = one patron, one book, etc.)
+- **Fields**: Each field contains one piece of information for every record in a table (the name field contains all patrons' names)
+
+# Table Names
+
+Table names should be clear and refer to the data contained within them. Examples include: students, cars, products, vendors, library_patrons. Table names should be lowercase and use snake_case formatting.
+
+# Field Naming
+
+Field names should be:
+
+- Lowercase with snake_case (card_num, teacher_id, serial_number)
+- **Singular** rather than plural (name, not names) because each field refers to information for a single record
+- Unique within the table - no duplicate field names
+- Different from the table name to avoid confusion
+
+Field naming is important because you'll type these names when writing SQL queries.
+
+# Unique Identifiers (Keys)
+
+Tables should include a special field containing a unique identifier for each record, sometimes called a **key**. The key value must be unique for every record - no duplicates allowed.
+
+**Good unique identifiers**: ID numbers (card_num, student_id, employee_id)
+**Poor unique identifiers**: Names (multiple people can share the same name)
+
+# Using Multiple Tables to Organize Data
+
+Using several well-organized tables is better than putting everything into one large table. Combining tables creates problems:
+
+- **Duplicate information**: The same data appears in multiple rows
+- **Lost uniqueness**: Key fields are no longer unique (e.g., if one patron has multiple checkouts, their card_num appears multiple times)
+
+Keeping data in separate, related tables and connecting them with SQL makes it easier to analyze data and answer questions.

@@ -1,0 +1,72 @@
+# Introduction to SQL Queries
+
+SQL is used to answer questions both within and across relational database tables. For example:
+
+- Which books did a patron check out in 2022?
+- Are salaries comparable across departments?
+- Which products had the highest sales last week?
+- How did website traffic change when a feature was introduced?
+
+SQL is particularly powerful for analyzing large datasets and uncovering trends.
+
+# SQL Keywords
+
+**Keywords** are reserved words that indicate what operation we want our code to perform. The two most common keywords are SELECT and FROM.
+
+## SELECT
+
+The SELECT keyword indicates which fields should be selected from a table.
+
+**Selecting one field:**
+
+```sql
+SELECT name FROM patrons;
+```
+
+**Selecting multiple fields:**
+List field names separated by commas in the order you want them to appear in the result set.
+
+```sql
+SELECT card_num, name FROM patrons;
+```
+
+**Selecting all fields:**
+Use an asterisk (\*), also known as a wildcard character, to select all fields.
+
+```sql
+SELECT * FROM patrons;
+```
+
+## FROM
+
+The FROM keyword indicates which table the fields are located in.
+
+## SQL Query Structure
+
+A complete SQL query follows this structure:
+
+```sql
+SELECT field_name(s)
+FROM table_name;
+```
+
+**Important conventions:**
+
+- Keywords (SELECT, FROM) are capitalized
+- Table and field names are lowercase
+- Queries end with a semicolon (;) to indicate the query is complete
+- The results of a query are called a **result set**
+
+## Examples
+
+Get first name and age from clients table:
+
+```sql
+SELECT first_name, age FROM clients;
+```
+
+Get all fields from clients table:
+
+```sql
+SELECT * FROM clients;
+```

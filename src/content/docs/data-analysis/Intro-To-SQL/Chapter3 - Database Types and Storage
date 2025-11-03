@@ -1,0 +1,41 @@
+# Database Storage
+
+Databases are stored on a server's hard disk. Servers are powerful computers that store information and perform services via requests made over a network. In this case, the service is data access through SQL queries. Servers can handle a large number of requests simultaneously, making them ideal for collaboration when multiple users need to access the database at once.
+
+# Data Types for Fields
+
+When creating a table, we must specify what type of data each field will store. The data type depends on the information in that field (numbers, text, dates, etc.) and determines what operations can be performed on it. For example, it makes sense to multiply numbers together, but multiplying someone's name doesn't make sense.
+
+## Strings (VARCHAR)
+
+A sequence of characters such as letters, numbers, or punctuation.
+
+Examples: Honda, Barrie, 1234 Street Street, Maham
+
+In SQL, the **VARCHAR** data type is commonly used for strings due to its flexibility to store both small and large strings.
+
+## Integers (INT)
+
+Whole numbers, either positive or negative, with no decimal point.
+
+Examples: 54, 189123, -182, 0
+
+In SQL, the **INT** data type stores integers and can hold values from less than negative two billion to more than positive two billion.
+
+## Floats (NUMERIC)
+
+Numbers that include a fractional part or decimal point.
+
+Examples: 2.05, 3.14, 0.6666666666, -15.7
+
+In SQL, the **NUMERIC** data type stores floats and can hold up to 38 digits total, including those before and after the decimal point.
+
+# Schemas
+
+A **schema** is a blueprint of a database. It shows:
+
+- What tables are included in the database
+- What fields each table contains and their data types
+- Relationships between tables
+
+For example, a library database schema would show that the VARCHAR data type is used for strings like book title, author, and genre, and that the patrons table is related to the checkouts table, but not the books table.
